@@ -11,35 +11,38 @@ The Expenses Tracker App is a robust financial management solution developed usi
 
 ## Technologies Used
 - Java
-- Spring boot
-- Spring MVC
-- Spring Security
-- Spring Data (JPA)
-- MySQL
 - Thymeleaf
 - Bootstrap
+- MySQL
+- Dockerfile
+- docker-compose.yml
+- Nginx reverse Proxy
+- 
+![image](https://github.com/user-attachments/assets/0d3eaf54-b840-42b5-ac42-7cc92ae744cf)
 
-## Features
-- **User Authentication and Authorization:** Securely sign up, sign in, and access the app with built-in authentication and authorization.
-- **CRUD Operations:** Perform essential financial tracking actions such as adding, reading, updating, and deleting expenses.
-- **Filtering:** Utilize the filtering feature to efficiently sort and view expenses based on various criteria.
 
 ## Getting Started
+
+# Step -1:
+First install docker and docker-compose in your system
+` apt update -y `
+`apt install docker.io -y`
+` apt install docker-compose -y`
+` docker -v`
+`docker-compose --version`
+
 1. **Clone the Repository:**
-`git clone https://github.com/your-username/expenses-tracker.git`
+`git clone https://github.com/muhammadaliazhar/Deployment-of-3-tier-JAVA-app-using-docker-compose.git`
 
-2. **Configure Database:**
-Set up MySQL database and update the application.properties file with your database configuration.
+# Step 2
+` cd project-folder`
 
-3. **Build and Run:**
-Build the project using your preferred IDE or with Maven:
-`mvn clean install`.
+# Step-3 Build and run application using docker-compose
+`docker-compose up`
+`docker ps`
 
-4. **Run the application:**
-`java -jar target/expenses-tracker.jar`.
-
-5. **Access the App:**
-Open your web browser and navigate to `http://localhost:8080`.
+# Step - 4 Access the App
+Open your web browser and navigate to `public-ip-adrress`
 
 ## ScreenShots
 ![Example Image](screenshots/1.png) <br>
