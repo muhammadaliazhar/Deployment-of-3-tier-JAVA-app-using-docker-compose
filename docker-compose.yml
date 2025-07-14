@@ -46,7 +46,7 @@ services:
     networks:
      - java-network
     volumes:
-     - /opt/java-mysql/var/lib/mysql
+     - /opt/java-mysql:/var/lib/mysql
     healthcheck:
      test: ["CMD" , "mysqladmin" , "ping" , "-h" , "localhost" , "-uroot" , "-pTest@123"]
      interval: 10s
