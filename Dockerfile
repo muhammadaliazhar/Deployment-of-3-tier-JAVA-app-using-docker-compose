@@ -1,4 +1,4 @@
-# stage 1 - build the  JAR file using maven
+# stage 1 - build the  JAR(java application runtime) file using maven
 FROM maven:3.8.3-openjdk-17 AS builder
 
 WORKDIR /app
